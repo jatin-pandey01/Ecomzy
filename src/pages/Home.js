@@ -4,9 +4,13 @@ import Product from '../components/Product';
 import Spinner from '../components/Spinner';
 
 const Home = () => {
+
     const url = 'https://fakestoreapi.com/products';
+
     const [loading,setLoading] = useState(false);
+    
     const [data,setData] = useState([]);
+    
     async function fetchData(){
         setLoading(true);
         try{
